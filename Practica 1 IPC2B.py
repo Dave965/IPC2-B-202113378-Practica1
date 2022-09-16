@@ -118,12 +118,13 @@ def despachar():
     j.node(tmp.cliente + str(tmp.tiempo),label)
     j.view()
     
-while opcion != 4:
+while opcion != 5:
     print("""########## Menú ##########
 # 1.- Poner orden        #
 # 2.- Ver ordenes        #
 # 3.- Despachar orden    #
-# 4.- Salir              #
+# 4.- Datos desarrollador#
+# 5.- Salir              #
 ##########################""")
 
     opcion = input("selecciona una opcion: ")
@@ -137,6 +138,9 @@ while opcion != 4:
         despachar()
         ver_orden()
     elif opcion == "4":
+        print('Nombre: David Abraham Noriega Zamora')
+        print('Carnet: 202113378')
+    elif opcion == "5":
         input("Nos vemos!")
     else:
         print("no se ha seleccionado una opcion correcta")
